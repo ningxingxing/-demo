@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.apple.huanxin.utils.MyListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dip"
+            android:divider="#ff0000" >
+        </com.example.apple.huanxin.utils.MyListView>
+
+        <!--<ListView-->
+            <!--android:id="@+id/listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="100dip"-->
+            <!--android:divider="#ff0000" >-->
+        <!--</ListView>-->
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="15"
+            android:layout_marginBottom="100dip"
+            android:visibility="gone"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/ec_layout_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:id="@+id/recording"
+                android:layout_weight="1"
+                android:layout_width="120dip"
+                android:layout_height="50dip"
+                android:text="说话"
+                 />
+
+            <EditText
+                android:id="@+id/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发送" />
+
+            <Button
+                android:layout_marginLeft="5dip"
+                android:id="@+id/sendImage"
+                android:layout_weight="1"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="图片"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
